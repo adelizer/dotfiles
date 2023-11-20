@@ -9,6 +9,9 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias ls='ls -alrtG'
 
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM='gnome-256color';
 elif infocmp xterm-256color >/dev/null 2>&1; then
