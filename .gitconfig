@@ -71,6 +71,13 @@
 	# Show the user email for the current repository.
 	whoami = config user.email
 
+
+    	co = checkout
+    	ci = commit
+    	br = branch
+    	st = status
+    	lg = log --graph --oneline --decorate --all
+    	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 [apply]
 
 	# Detect whitespace errors when applying a patch.
