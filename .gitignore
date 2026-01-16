@@ -1,1 +1,8 @@
+# Secrets - NEVER commit these
 .env
+*.secret
+*_secret*
+credentials*
+
+# OS files
+.DS_Store
